@@ -1,5 +1,5 @@
 {% set name = "types-aiobotocore-batch" %}
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 {% set lib_version = version.split(".post")[0] %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0a714ec9d143f603fc87eb99fcbf0ed25a760645b0a090f4da350c8b868a48a2
+  sha256: e82520b8d1d060b7546a9840a1af4d3c6029606b1521e06d60d0fc2a37e8a97d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
